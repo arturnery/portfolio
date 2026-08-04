@@ -21,7 +21,7 @@ acessibilidade e código fácil de manter.
 
 ## Demo
 
-🔗 **Online:** https://portfolio-puce-psi-62.vercel.app
+🔗 **Online:** https://arturnery.vercel.app
 
 <!-- Substitua pelos seus prints/GIF (sugestão: um do tema claro e um do escuro) -->
 > `[ADICIONAR SCREENSHOT/GIF AQUI — ex.: docs/preview-dark.png e docs/preview-light.png]`
