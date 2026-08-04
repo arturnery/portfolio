@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Primary meta tags -->
+    <title>Artur Matoso Nery — Desenvolvedor Full Stack</title>
+    <meta
+      name="description"
+      content="Portfólio de Artur Matoso Nery, desenvolvedor Full Stack (TypeScript, React, Node.js, PostgreSQL). Projetos com type-safety end-to-end e deploy em produção. Em busca da primeira oportunidade como dev."
+    />
+    <meta name="author" content="Artur Matoso Nery" />
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Artur Matoso Nery — Desenvolvedor Full Stack" />
+    <meta
+      property="og:description"
+      content="TypeScript, React, Node.js e PostgreSQL. Type-safety end-to-end e deploy em produção. Em busca da primeira oportunidade como dev."
+    />
+    <!-- TODO: troque pela URL pública depois do deploy na Vercel -->
+    <meta property="og:url" content="https://seu-dominio.vercel.app" />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Artur Matoso Nery — Desenvolvedor Full Stack" />
+    <meta
+      name="twitter:description"
+      content="TypeScript, React, Node.js e PostgreSQL. Type-safety end-to-end e deploy em produção."
+    />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <!-- Theme color sets the browser UI color on mobile -->
+    <meta name="theme-color" content="#0B1120" />
+
+    <!-- Fonts: Inter (UI) + JetBrains Mono (tags/labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      Inline script: applies the saved theme BEFORE React mounts to avoid a
+      "flash of the wrong theme" (FOUC) on first paint.
+    -->
+    <script>
+      ;(function () {
+        try {
+          var saved = localStorage.getItem('theme')
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+          var theme = saved || (prefersDark ? 'dark' : 'light')
+          document.documentElement.setAttribute('data-theme', theme)
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light')
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

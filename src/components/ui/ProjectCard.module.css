@@ -1,0 +1,160 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition-slow), box-shadow var(--transition-slow),
+    border-color var(--transition-slow);
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--border-strong);
+}
+
+/* ---- Media / thumbnail ---- */
+.media {
+  aspect-ratio: 16 / 9;
+  background: var(--bg-subtle);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+.card:hover .media img {
+  transform: scale(1.03);
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--bg-subtle),
+    var(--bg-subtle) 12px,
+    var(--surface-hover) 12px,
+    var(--surface-hover) 24px
+  );
+}
+.placeholderIcon {
+  width: 28px;
+  height: 28px;
+  opacity: 0.7;
+}
+
+/* ---- Body ---- */
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  flex: 1;
+}
+
+.title {
+  font-size: var(--fs-xl);
+}
+
+.desc {
+  color: var(--text-muted);
+  font-size: var(--fs-base);
+  /* Keep grid cards tidy; remove this block to show full text */
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: auto; /* push tags + actions to the bottom for even cards */
+  padding-top: var(--space-2);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.actionPrimary,
+.actionLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  transition: color var(--transition);
+}
+.actionPrimary svg,
+.actionLink svg {
+  width: 17px;
+  height: 17px;
+}
+.actionPrimary {
+  color: var(--accent);
+}
+.actionPrimary:hover {
+  color: var(--accent-hover);
+}
+.actionLink {
+  color: var(--text-muted);
+}
+.actionLink:hover {
+  color: var(--text);
+}
+
+/* ---- Featured (larger) variant ---- */
+.featured .title {
+  font-size: var(--fs-2xl);
+}
+.featured .body {
+  padding: var(--space-6);
+  gap: var(--space-4);
+}
+.featured .desc {
+  font-size: var(--fs-lg);
+}
+
+/* On wide screens, featured cards put media beside the text */
+@media (min-width: 880px) {
+  .featured {
+    flex-direction: row;
+  }
+  .featured .media {
+    flex: 0 0 48%;
+    /* Image fills the full card height (no empty gaps). The card height is
+       kept close to the image's 16:9 ratio by clamping the text below, so the
+       cover crop is negligible. */
+    aspect-ratio: auto;
+    border-bottom: none;
+    border-right: 1px solid var(--border);
+  }
+  .featured .body {
+    flex: 1;
+  }
+  /* Keep the text column from growing taller than the image beside it, so the
+     card height tracks the image. (Mobile/stacked layout shows full text.) */
+  .featured .desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

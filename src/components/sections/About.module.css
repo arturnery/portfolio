@@ -1,0 +1,53 @@
+.grid {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: 1fr;
+}
+
+.bio {
+  font-size: var(--fs-lg);
+  color: var(--text-muted);
+  max-width: 65ch;
+}
+
+.cards {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: 1fr;
+}
+
+.card {
+  padding: var(--space-5);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.cardLabel {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--accent);
+  margin-bottom: var(--space-3);
+}
+
+.cardText {
+  color: var(--text-muted);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* Two-column layout on wider screens: bio beside the cards */
+@media (min-width: 860px) {
+  .grid {
+    grid-template-columns: 1.1fr 1fr;
+    align-items: start;
+    gap: var(--space-7);
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

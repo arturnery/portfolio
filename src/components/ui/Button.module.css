@@ -1,0 +1,60 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color var(--transition), border-color var(--transition),
+    color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.icon {
+  display: inline-flex;
+}
+.icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Primary — filled accent */
+.primary {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+.primary:hover {
+  background: var(--accent-hover);
+}
+
+/* Secondary — outline */
+.secondary {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+.secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* Ghost — text only */
+.ghost {
+  background: transparent;
+  color: var(--text-muted);
+  padding-inline: var(--space-3);
+}
+.ghost:hover {
+  color: var(--accent);
+  background: var(--accent-soft);
+}

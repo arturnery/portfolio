@@ -1,0 +1,34 @@
+/*
+  Dark theme overrides. The inline script in index.html sets
+  data-theme on <html> before first paint; ThemeContext keeps it in sync.
+  Only color tokens change here — everything else is inherited from tokens.css.
+*/
+
+[data-theme='dark'] {
+  --accent: #60a5fa;            /* blue-400, pops on dark bg */
+  --accent-hover: #93c5fd;      /* blue-300 */
+  --accent-contrast: #0a1f44;   /* dark navy text on bright accent */
+  --accent-soft: rgba(96, 165, 250, 0.14);
+
+  --bg: #0b1120;                /* deep slate/navy */
+  --bg-subtle: #0f172a;         /* slate-900 */
+  --surface: #111a2e;           /* cards, slightly lifted */
+  --surface-hover: #1a2740;
+  --border: #1e293b;            /* slate-800 */
+  --border-strong: #334155;     /* slate-700 */
+
+  --text: #f1f5f9;              /* slate-100 */
+  --text-muted: #cbd5e1;        /* slate-300 */
+  --text-subtle: #64748b;       /* slate-500 */
+
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3),
+            0 4px 20px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Smooth the moment of switching themes (but not other transitions). */
+:root.theme-transition,
+:root.theme-transition * {
+  transition: background-color var(--transition),
+    border-color var(--transition), color var(--transition) !important;
+}

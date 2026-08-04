@@ -1,0 +1,135 @@
+.layout {
+  display: grid;
+  gap: var(--space-7);
+}
+
+.blockLabel {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--accent);
+  margin-bottom: var(--space-4);
+}
+
+/* ---- Timeline ---- */
+.timeline {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.entry {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.period {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--text-subtle);
+}
+
+.entryTitle {
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-3);
+}
+
+.highlights {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.highlights li {
+  position: relative;
+  padding-left: var(--space-4);
+  color: var(--text-muted);
+  font-size: var(--fs-base);
+}
+
+.highlights li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--accent);
+}
+
+/* ---- Education + languages ---- */
+.bottom {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.educationList,
+.languageList {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.educationItem,
+.languageItem {
+  padding: var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.educationHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.status {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--accent);
+}
+
+.educationDegree {
+  color: var(--text-muted);
+}
+
+.languageItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.languageName {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.languageLevel {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+@media (min-width: 640px) {
+  .entry {
+    grid-template-columns: 7rem 1fr;
+    align-items: start;
+    gap: var(--space-5);
+  }
+}
+
+@media (min-width: 860px) {
+  .bottom {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: start;
+  }
+}
