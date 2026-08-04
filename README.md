@@ -21,7 +21,7 @@ acessibilidade e código fácil de manter.
 
 ## Demo
 
-🔗 **Online:** _(link do deploy será adicionado após publicar na Vercel)_
+🔗 **Online:** https://portfolio-puce-psi-62.vercel.app
 
 <!-- Substitua pelos seus prints/GIF (sugestão: um do tema claro e um do escuro) -->
 > `[ADICIONAR SCREENSHOT/GIF AQUI — ex.: docs/preview-dark.png e docs/preview-light.png]`
