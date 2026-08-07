@@ -62,8 +62,8 @@ export const projects = [
       en: 'Airdrop Tracker',
     },
     descricao: {
-      pt: 'Fui contratado para desenvolver uma ferramenta de controle financeiro de airdrops: registra capital aportado, tarefas, pontos e retornos por projeto e carteira, com login e dados isolados por usuário.',
-      en: 'I was hired to build a financial control tool for crypto airdrops: it tracks deployed capital, tasks, points and returns per project and wallet, with login and per-user data isolation.',
+      pt: 'Fui contratado pela Level Cripto para desenvolver uma ferramenta de controle financeiro de airdrops: registra aportes, tarefas, pontos e retornos por projeto e carteira, com dados isolados por usuário.',
+      en: 'I was hired by Level Cripto to build a financial control tool for crypto airdrops: it tracks deposits, tasks, points and returns per project and wallet, with per-user data isolation.',
     },
     stack: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'PostgreSQL', 'Drizzle ORM', 'Auth.js', 'Recharts'],
     categoria: 'freelance',
@@ -80,8 +80,8 @@ export const projects = [
       en: 'EcoBot',
     },
     descricao: {
-      pt: 'Fui contratado para desenvolver um bot que monitora o ForexFactory e entrega no Discord a agenda econômica diária, com alertas e análise de surpresa para antecipar alta volatilidade. Roda 24/7 em produção.',
-      en: 'I was hired to build a bot that monitors ForexFactory and posts the daily economic calendar to Discord, with alerts and surprise analysis to anticipate high volatility. Runs 24/7 in production.',
+      pt: 'Fui contratado pela Level Cripto para desenvolver um bot que entrega no Discord a agenda econômica diária, com alertas e análise de surpresa para antecipar alta volatilidade. Roda 24/7 em produção.',
+      en: 'I was hired by Level Cripto to build a bot that posts the daily economic calendar to Discord, with alerts and surprise analysis to anticipate high volatility. Runs 24/7 in production.',
     },
     stack: ['Python', 'discord.py', 'Docker', 'BeautifulSoup4', 'Oracle Cloud', 'Linux'],
     categoria: 'freelance',
