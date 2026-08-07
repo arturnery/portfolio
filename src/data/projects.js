@@ -56,6 +56,24 @@ export const projects = [
     imagens: ['/images/projects/level-cripto-pro/1.webp'],
   },
   {
+    id: 'airdrop-tracker',
+    titulo: {
+      pt: 'Airdrop Tracker',
+      en: 'Airdrop Tracker',
+    },
+    descricao: {
+      pt: 'Fui contratado para desenvolver uma ferramenta de controle financeiro de airdrops: registra capital aportado, tarefas, pontos e retornos por projeto e carteira, com login e dados isolados por usuário.',
+      en: 'I was hired to build a financial control tool for crypto airdrops: it tracks deployed capital, tasks, points and returns per project and wallet, with login and per-user data isolation.',
+    },
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'PostgreSQL', 'Drizzle ORM', 'Auth.js', 'Recharts'],
+    categoria: 'freelance',
+    destaque: true,
+    repoUrl: 'https://github.com/arturnery/airdrop-tracker',
+    demoUrl: 'https://airdrop-tracker-rho.vercel.app',
+    // TODO: screenshot do app (dá pra logar na demo: demo@airdrop-tracker.app / demo1234)
+    imagens: [],
+  },
+  {
     id: 'ecobot',
     titulo: {
       pt: 'EcoBot',
