@@ -53,7 +53,7 @@ export const projects = [
     repoUrl: 'https://github.com/arturnery/airdrop-tracker',
     demoUrl: 'https://lvl-airdrop.vercel.app',
     autoplay: true, // carrossel passa sozinho (pausa no hover/foco, respeita reduce-motion)
-    // 4 telas do app: visão geral, projetos, contas e histórico.
+    // 4 telas do app: histórico, visão geral, projetos e contas.
     imagens: [
       '/images/projects/airdrop-tracker/1.webp',
       '/images/projects/airdrop-tracker/2.webp',
