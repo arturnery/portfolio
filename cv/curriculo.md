@@ -22,7 +22,7 @@ Desenvolvedor Full Stack com foco em TypeScript, React/Next.js e Node.js, com ex
 Cliente recorrente: **Level Cripto**. Três projetos entregues para o mesmo cliente, todos em produção e em evolução contínua: uma aplicação multiusuário de controle financeiro, a landing page da plataforma e um bot de calendário econômico no Discord.
 
 **Airdrop Tracker**: aplicação multiusuário de controle financeiro, em produção
-Demo: https://airdrop-tracker-rho.vercel.app · Repositório: https://github.com/arturnery/airdrop-tracker
+Demo: https://lvl-airdrop.vercel.app · Repositório: https://github.com/arturnery/airdrop-tracker
 
 - Recebi do cliente o problema, não a solução: a comunidade controlava o farming de airdrops em planilhas e não conseguia responder quanto tinha investido nem qual era o retorno real. Levantei os requisitos, modelei o domínio e escolhi a stack sozinho.
 - Escrevi o documento de arquitetura antes de implementar, mapeando as três limitações estruturais da planilha: a conta era texto redigitado a cada linha e não uma entidade, depósito e foto de saldo dividiam a mesma coluna (o que tornava todo somatório incorreto) e um único campo de status significava tanto tarefa pendente quanto airdrop não recebido.

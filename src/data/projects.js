@@ -51,9 +51,15 @@ export const projects = [
     categoria: 'freelance',
     destaque: true,
     repoUrl: 'https://github.com/arturnery/airdrop-tracker',
-    demoUrl: 'https://airdrop-tracker-rho.vercel.app',
-    // TODO: screenshot do app (dá pra logar na demo: demo@airdrop-tracker.app / demo1234)
-    imagens: [],
+    demoUrl: 'https://lvl-airdrop.vercel.app',
+    autoplay: true, // carrossel passa sozinho (pausa no hover/foco, respeita reduce-motion)
+    // 4 telas do app: visão geral, projetos, contas e histórico.
+    imagens: [
+      '/images/projects/airdrop-tracker/1.webp',
+      '/images/projects/airdrop-tracker/2.webp',
+      '/images/projects/airdrop-tracker/3.webp',
+      '/images/projects/airdrop-tracker/4.webp',
+    ],
   },
   {
     id: 'level-cripto-pro',
