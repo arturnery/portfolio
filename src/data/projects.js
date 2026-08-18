@@ -38,24 +38,6 @@ export const projects = [
   // 1) FREELANCE / PROFISSIONAL — destaque (seu ativo mais forte)
   // ----------------------------------------------------------------------
   {
-    id: 'level-cripto-pro',
-    titulo: {
-      pt: 'Level Cripto PRO',
-      en: 'Level Cripto PRO',
-    },
-    descricao: {
-      pt: 'Fui contratado para desenvolver a página de vendas full stack do Level Cripto PRO, do banco de dados ao deploy em produção, incluindo o sistema de captação de leads com validação dos dados e testes automatizados.',
-      en: 'I was hired to build the full stack sales page for Level Cripto PRO, from the database to production deployment, including the lead-capture system with data validation and automated tests.',
-    },
-    stack: ['React', 'TypeScript', 'tRPC', 'Zod', 'Node.js', 'PostgreSQL', 'Drizzle ORM', 'Vitest'],
-    categoria: 'freelance',
-    destaque: true,
-    repoUrl: 'https://github.com/arturnery/LevelCriptoPRO',
-    demoUrl: 'https://www.levelcripto.com.br',
-    // Uma imagem -> renderiza como imagem única (sem setas).
-    imagens: ['/images/projects/level-cripto-pro/1.webp'],
-  },
-  {
     id: 'airdrop-tracker',
     titulo: {
       pt: 'Airdrop Tracker',
@@ -72,6 +54,24 @@ export const projects = [
     demoUrl: 'https://airdrop-tracker-rho.vercel.app',
     // TODO: screenshot do app (dá pra logar na demo: demo@airdrop-tracker.app / demo1234)
     imagens: [],
+  },
+  {
+    id: 'level-cripto-pro',
+    titulo: {
+      pt: 'Level Cripto PRO',
+      en: 'Level Cripto PRO',
+    },
+    descricao: {
+      pt: 'Fui contratado para desenvolver a página de vendas full stack do Level Cripto PRO, do banco de dados ao deploy em produção, incluindo o sistema de captação de leads com validação dos dados e testes automatizados.',
+      en: 'I was hired to build the full stack sales page for Level Cripto PRO, from the database to production deployment, including the lead-capture system with data validation and automated tests.',
+    },
+    stack: ['React', 'TypeScript', 'tRPC', 'Zod', 'Node.js', 'PostgreSQL', 'Drizzle ORM', 'Vitest'],
+    categoria: 'freelance',
+    destaque: true,
+    repoUrl: 'https://github.com/arturnery/LevelCriptoPRO',
+    demoUrl: 'https://www.levelcripto.com.br',
+    // Uma imagem -> renderiza como imagem única (sem setas).
+    imagens: ['/images/projects/level-cripto-pro/1.webp'],
   },
   {
     id: 'ecobot',
