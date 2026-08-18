@@ -26,11 +26,21 @@ export const workExperience = [
 
 export const education = [
   {
+    id: 'pos-fullstack',
+    // Sem ano definido ainda: o componente esconde o período quando é ''.
+    period: '',
+    degree: {
+      pt: 'Pós-graduação em Desenvolvimento Full Stack (Descomplica)',
+      en: 'Postgraduate Diploma in Full Stack Development (Descomplica)',
+    },
+    status: { pt: 'Em andamento', en: 'In progress' },
+  },
+  {
     id: 'ads',
     period: '2025',
     degree: {
-      pt: 'Tecnólogo em Análise e Desenvolvimento de Sistemas',
-      en: 'Associate Degree in Systems Analysis and Development',
+      pt: 'Tecnólogo em Análise e Desenvolvimento de Sistemas (Descomplica)',
+      en: 'Associate Degree in Systems Analysis and Development (Descomplica)',
     },
     status: { pt: 'Concluído', en: 'Completed' },
   },

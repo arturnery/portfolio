@@ -78,7 +78,9 @@ Demo: https://foodexplorerrs.netlify.app · Repositório: https://github.com/art
 
 ## Formação Acadêmica
 
-**Tecnólogo em Análise e Desenvolvimento de Sistemas.** Conclusão: 2025
+**Pós-graduação em Desenvolvimento Full Stack, Descomplica.** Em andamento.
+
+**Tecnólogo em Análise e Desenvolvimento de Sistemas, Descomplica.** Conclusão: 2025
 
 **Formação Full Stack, Rocketseat (Explorer).** Projeto de conclusão: Food Explorer
 
