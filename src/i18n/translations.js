@@ -40,7 +40,7 @@ export const translations = {
     // --- Resumo Profissional ---
     about_title: 'Resumo Profissional',
     about_bio:
-      'Desenvolvedor Full Stack com foco em TypeScript, React e Node.js, com experiência prática construindo aplicações completas, da modelagem do banco ao deploy em produção. Trabalho com type-safety end-to-end (tRPC + Zod), bancos serverless, testes automatizados com Vitest e arquitetura preparada para escalar.',
+      'Desenvolvedor Full Stack com foco em TypeScript, React/Next.js e Node.js, com experiência prática construindo aplicações completas, da modelagem do banco ao deploy em produção. Como freelancer, entreguei três projetos em produção para o mesmo cliente, trabalhando com type-safety end-to-end (tRPC + Zod), bancos serverless, testes automatizados com Vitest e infraestrutura própria (Vercel, Docker em VM Linux).',
     about_seeking_label: 'O que estou buscando',
     about_seeking:
       'Minha primeira oportunidade como desenvolvedor júnior para contribuir em times de produto e evoluir em boas práticas, code review e desenvolvimento colaborativo.',
@@ -75,6 +75,7 @@ export const translations = {
     skills_cat_frontend: 'Front-end',
     skills_cat_backend: 'Back-end',
     skills_cat_database: 'Banco de dados',
+    skills_cat_tests: 'Testes',
     skills_cat_devops: 'DevOps / Deploy',
     skills_cat_tools: 'Ferramentas',
     skills_cat_learning: 'Estudando',
@@ -117,7 +118,7 @@ export const translations = {
     // --- Professional Summary ---
     about_title: 'Professional Summary',
     about_bio:
-      'Full Stack Developer focused on TypeScript, React and Node.js, with hands-on experience building complete applications, from database modeling to production deployment. I work with end-to-end type-safety (tRPC + Zod), serverless databases, automated testing with Vitest, and architecture built to scale.',
+      'Full Stack Developer focused on TypeScript, React/Next.js and Node.js, with hands-on experience building complete applications, from database modeling to production deployment. As a freelancer, I have delivered three projects in production for the same client, working with end-to-end type-safety (tRPC + Zod), serverless databases, automated testing with Vitest, and self-managed infrastructure (Vercel, Docker on a Linux VM).',
     about_seeking_label: "What I'm looking for",
     about_seeking:
       'My first opportunity as a junior developer, to contribute to product teams and grow in best practices, code review, and collaborative development.',
@@ -151,6 +152,7 @@ export const translations = {
     skills_cat_frontend: 'Front-end',
     skills_cat_backend: 'Back-end',
     skills_cat_database: 'Database',
+    skills_cat_tests: 'Testing',
     skills_cat_devops: 'DevOps / Deploy',
     skills_cat_tools: 'Tools',
     skills_cat_learning: 'Learning',
