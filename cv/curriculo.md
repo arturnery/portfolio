@@ -19,7 +19,17 @@ Desenvolvedor Full Stack com foco em TypeScript, React/Next.js e Node.js, com ex
 
 ### Desenvolvedor Full Stack Freelancer (atual)
 
-Cliente recorrente: **Level Cripto**. Três projetos entregues para o mesmo cliente, todos em produção e em evolução contínua: a landing page da plataforma, uma aplicação multiusuário de controle financeiro e um bot de calendário econômico no Discord.
+Cliente recorrente: **Level Cripto**. Três projetos entregues para o mesmo cliente, todos em produção e em evolução contínua: uma aplicação multiusuário de controle financeiro, a landing page da plataforma e um bot de calendário econômico no Discord.
+
+**Airdrop Tracker**: aplicação multiusuário de controle financeiro, em produção
+Demo: https://airdrop-tracker-rho.vercel.app · Repositório: https://github.com/arturnery/airdrop-tracker
+
+- Recebi do cliente o problema, não a solução: a comunidade controlava o farming de airdrops em planilhas e não conseguia responder quanto tinha investido nem qual era o retorno real. Levantei os requisitos, modelei o domínio e escolhi a stack sozinho.
+- Escrevi o documento de arquitetura antes de implementar, mapeando as três limitações estruturais da planilha: a conta era texto redigitado a cada linha e não uma entidade, depósito e foto de saldo dividiam a mesma coluna (o que tornava todo somatório incorreto) e um único campo de status significava tanto tarefa pendente quanto airdrop não recebido.
+- Resolvi modelando o domínio como livro-razão: aportes, rendimentos, retiradas e taxas são lançamentos datados e o saldo passa a ser resultado calculado, assumindo em troca que toda variação precisa ser lançada.
+- Organizei o código em três fronteiras explícitas: leitura isolada em consultas dedicadas, escrita concentrada em Server Actions validadas com Zod e cálculo financeiro em funções puras, sem acesso ao banco.
+- Construí em Next.js 16 (App Router, Server Components), TypeScript em modo strict, PostgreSQL serverless (Neon) e Drizzle ORM com migrations versionadas sobre 14 tabelas, com autenticação Auth.js (Credentials + JWT), aprovação manual de cadastro e isolamento de dados por usuário.
+- Cobri as funções de cálculo financeiro com 159 testes automatizados em Vitest, viabilizados por elas serem puras.
 
 **Level Cripto PRO**: landing page full stack em produção
 Projeto: https://www.levelcripto.com.br/ · Repositório: https://github.com/arturnery/LevelCriptoPRO
@@ -31,16 +41,6 @@ Projeto: https://www.levelcripto.com.br/ · Repositório: https://github.com/art
 - Desenvolvi backend em Node.js + Express com PostgreSQL serverless (Neon) via Drizzle ORM, incluindo autenticação JWT (jose), tratamento de erros e detecção de e-mails duplicados.
 - Escrevi 108 testes automatizados com Vitest cobrindo validações de formulário, máscaras de telefone (BR e internacional), tratamento de erros do Drizzle e fluxo de autenticação.
 - Configurei deploy serverless no Vercel: diagnostiquei e resolvi ERR_MODULE_NOT_FOUND em produção pré-compilando o handler tRPC com esbuild como bundle autossuficiente.
-
-**Airdrop Tracker**: aplicação multiusuário de controle financeiro, em produção
-Demo: https://airdrop-tracker-rho.vercel.app · Repositório: https://github.com/arturnery/airdrop-tracker
-
-- Recebi do cliente o problema, não a solução: a comunidade controlava o farming de airdrops em planilhas e não conseguia responder quanto tinha investido nem qual era o retorno real. Levantei os requisitos, modelei o domínio e escolhi a stack sozinho.
-- Escrevi o documento de arquitetura antes de implementar, mapeando as três limitações estruturais da planilha: a conta era texto redigitado a cada linha e não uma entidade, depósito e foto de saldo dividiam a mesma coluna (o que tornava todo somatório incorreto) e um único campo de status significava tanto tarefa pendente quanto airdrop não recebido.
-- Resolvi modelando o domínio como livro-razão: aportes, rendimentos, retiradas e taxas são lançamentos datados e o saldo passa a ser resultado calculado, assumindo em troca que toda variação precisa ser lançada.
-- Organizei o código em três fronteiras explícitas: leitura isolada em consultas dedicadas, escrita concentrada em Server Actions validadas com Zod e cálculo financeiro em funções puras, sem acesso ao banco.
-- Construí em Next.js 16 (App Router, Server Components), TypeScript em modo strict, PostgreSQL serverless (Neon) e Drizzle ORM com migrations versionadas sobre 14 tabelas, com autenticação Auth.js (Credentials + JWT), aprovação manual de cadastro e isolamento de dados por usuário.
-- Cobri as funções de cálculo financeiro com 159 testes automatizados em Vitest, viabilizados por elas serem puras.
 
 **EcoBot**: bot de calendário econômico para Discord, rodando 24/7 em produção
 Repositório: https://github.com/arturnery/discord-eco-bot
@@ -81,8 +81,6 @@ Demo: https://foodexplorerrs.netlify.app · Repositório: https://github.com/art
 **Pós-graduação em Desenvolvimento Full Stack, Descomplica.** Em andamento.
 
 **Tecnólogo em Análise e Desenvolvimento de Sistemas, Descomplica.** Conclusão: 2025
-
-**Formação Full Stack, Rocketseat (Explorer).** Projeto de conclusão: Food Explorer
 
 ---
 
