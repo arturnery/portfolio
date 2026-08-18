@@ -27,6 +27,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   transition: transform var(--transition-slow);
 }
 .card:hover .media img {
@@ -139,12 +140,13 @@
   }
   .featured .media {
     flex: 0 0 48%;
-    /* Image fills the full card height (no empty gaps). The card height is
-       kept close to the image's 16:9 ratio by clamping the text below, so the
-       cover crop is negligible. */
+    /* A caixa fica em ~1.37 (mais estreita que os 16/9 da imagem) porque a
+       altura do card vem da coluna de texto ao lado. Com `cover` isso cortava
+       11% de cada lado, comendo a barra lateral dos screenshots de app. */
     aspect-ratio: auto;
     border-bottom: none;
     border-right: 1px solid var(--border);
+    background: var(--bg-subtle);
   }
   .featured .body {
     flex: 1;
