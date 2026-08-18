@@ -61,7 +61,7 @@ Site: https://arturnery.vercel.app · Repositório: https://github.com/arturnery
 - Construí do zero com React 18 + Vite, sem bibliotecas de UI, cada dependência evitada por decisão registrada no README: CSS Modules com design tokens em custom properties para centralizar o theming, internacionalização PT/EN própria em um objeto mais um hook, e dark/light mode aplicado por script inline antes do React montar, para não piscar o tema errado.
 - Separei conteúdo de apresentação, com projetos e perfil em arquivos de dados que a UI só consome, e tratei acessibilidade desde o início: HTML semântico, skip link, foco visível, contraste AA e `prefers-reduced-motion` respeitado.
 
-### Venda do Dia: TCC (PWA offline-first)
+### Venda do Dia: PWA offline-first (TCC do curso de ADS)
 Demo: https://arturnery.github.io/projeto-PEXV-faculdade-descomplica/ · Repositório: https://github.com/arturnery/projeto-PEXV-faculdade-descomplica
 
 - Desenvolvi um PWA de controle de vendas diárias para uma mercearia de bairro, funcionando offline via Service Worker e com custo de manutenção zero. Representei dinheiro em centavos inteiros para evitar erro de ponto flutuante e isolei a lógica de negócio do DOM para torná-la testável.
