@@ -45,9 +45,9 @@ Projeto: https://www.levelcripto.com.br/ · Repositório: https://github.com/art
 **EcoBot**: bot de calendário econômico para Discord, rodando 24/7 em produção
 Repositório: https://github.com/arturnery/discord-eco-bot
 
-- Desenvolvi um bot em Python que monitora o ForexFactory e entrega automaticamente agenda econômica diária, alertas pré-evento e resultados com análise de surpresa (real vs. previsão) em um canal do Discord, para antecipar janelas de alta volatilidade no mercado.
+- Desenvolvi um bot em Python que monitora o calendário econômico do Investing.com e entrega automaticamente agenda diária, alertas pré-evento e resultados com análise de surpresa (real vs. previsão) em um canal do Discord, para antecipar janelas de alta volatilidade no mercado.
 - Implementei deploy em produção em VM Linux na nuvem (Oracle Cloud Always Free, Ubuntu) com Docker e docker-compose, usando `restart: always` para disponibilidade contínua sem supervisão, com fluxo de atualização via SSH/SCP.
-- Diagnostiquei e resolvi um bug que só aparecia em produção: o ForexFactory serve horários conforme o IP do servidor, então tornei o timezone configurável por variável de ambiente, resolvendo sem alterar código.
+- Diagnostiquei e resolvi um bug que só aparecia em produção: a fonte servia horários conforme o IP do servidor, então tornei o timezone configurável por variável de ambiente, resolvendo sem alterar código.
 - Implementei persistência de estado em arquivo com volume Docker para garantir idempotência: alertas e resultados não são reenviados após reinício do container, sem a complexidade de um banco de dados.
 - Construí o scraper com BeautifulSoup4 + lxml e retry automático (5 tentativas), além de filtros configuráveis de moeda e impacto via variáveis de ambiente.
 
