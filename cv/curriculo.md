@@ -92,6 +92,7 @@ Demo: https://foodexplorerrs.netlify.app · Repositório: https://github.com/art
 - **Banco de Dados:** PostgreSQL (Neon serverless), MySQL, SQLite, Drizzle ORM (migrations versionadas), Knex
 - **Testes:** Vitest (403 testes escritos entre projetos), jsdom, GitHub Actions
 - **DevOps / Deploy:** Docker (docker-compose, volumes, restart policy), Vercel, Oracle Cloud (VM Linux), Git/GitHub, esbuild, SSH/SCP
+- **Desenvolvimento assistido por IA:** Claude Code no fluxo diário para implementação, testes e refatoração, com instruções de agente versionadas por projeto, catálogo próprio de 39 padrões de defeito, e revisão crítica de todo código gerado antes do commit
 - **Conceitos:** type-safety end-to-end, arquitetura serverless, modelagem de dados, autenticação e isolamento por usuário, deploy em produção
 
 ---

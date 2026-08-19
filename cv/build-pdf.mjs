@@ -130,7 +130,7 @@ const CSS = `
     margin: 0;
     font-family: "Inter", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
     font-size: 9.3pt;
-    line-height: 1.36;
+    line-height: 1.33;
     color: #1e293b;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;

@@ -44,6 +44,9 @@ export const translations = {
     about_seeking_label: 'O que estou buscando',
     about_seeking:
       'Minha primeira oportunidade como desenvolvedor júnior para contribuir em times de produto e evoluir em boas práticas, code review e desenvolvimento colaborativo.',
+    about_ai_label: 'Como trabalho com IA',
+    about_ai:
+      'Uso Claude Code no fluxo diário, para implementação, testes e refatoração. Cada projeto carrega instruções de agente versionadas no repositório, com travas como exigir backup do banco antes de qualquer mudança que toque produção, e mantenho um catálogo de 39 padrões de defeito que já cometi, lido antes de escrever código. Todo código gerado passa por revisão crítica antes do commit.',
     about_tech_label: 'Principais tecnologias',
 
     // --- Experiência & Formação ---
@@ -122,6 +125,9 @@ export const translations = {
     about_seeking_label: "What I'm looking for",
     about_seeking:
       'My first opportunity as a junior developer, to contribute to product teams and grow in best practices, code review, and collaborative development.',
+    about_ai_label: 'How I work with AI',
+    about_ai:
+      'I use Claude Code daily, for implementation, tests and refactoring. Every project carries versioned agent instructions in the repository, including guardrails such as requiring a database backup before anything that touches production, and I keep a catalogue of 39 defect patterns I have already hit, read before writing code. Every generated line goes through critical review before it is committed.',
     about_tech_label: 'Core technologies',
 
     // --- Experience & Education ---

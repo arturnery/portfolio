@@ -28,6 +28,11 @@ export default function About() {
           </div>
 
           <div className={styles.card}>
+            <h3 className={styles.cardLabel}>{t('about_ai_label')}</h3>
+            <p className={styles.cardText}>{t('about_ai')}</p>
+          </div>
+
+          <div className={styles.card}>
             <h3 className={styles.cardLabel}>{t('about_tech_label')}</h3>
             <ul className={styles.tags}>
               {coreTech.map((tech) => (
